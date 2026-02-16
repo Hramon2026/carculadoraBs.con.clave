@@ -16,16 +16,16 @@
         <h2>INGRESO AL SISTEMA</h2>
         <div class="input-group">
             <label>Ingrese Clave de Acceso:</label>
-            <input type="password" id="claveEntrada" placeholder="••••">
+            <input type="password" id="claveEntrada" placeholder="â€¢â€¢â€¢â€¢">
         </div>
         <button class="btn-guardar-azul" onclick="verificarClave()">Entrar</button>
     </div>
 
     <div id="vista-admin" class="card hidden">
-        <h2>CONFIGURACIÓN DE CLAVES</h2>
-        <div class="input-group"><label>Contraseña Admin:</label><input type="password" id="cAdmin"></div>
-        <div class="input-group"><label>Contraseña Supervisor:</label><input type="password" id="cSuper"></div>
-        <div class="input-group"><label>Contraseña Vendedor:</label><input type="password" id="cVendedor"></div>
+        <h2>CONFIGURACIÃ“N DE CLAVES</h2>
+        <div class="input-group"><label>ContraseÃ±a Admin:</label><input type="password" id="cAdmin"></div>
+        <div class="input-group"><label>ContraseÃ±a Supervisor:</label><input type="password" id="cSuper"></div>
+        <div class="input-group"><label>ContraseÃ±a Vendedor:</label><input type="password" id="cVendedor"></div>
         <button class="btn-guardar-azul" onclick="guardarCambios()">Guardar Cambios</button>
         <p onclick="regresarACalculadora()" style="text-align:center; color:#6da0f2; cursor:pointer; margin-top:15px; font-weight:bold;">VOLVER</p>
     </div>
@@ -53,7 +53,7 @@
                 <div class="gran-total" style="border-top: none; padding-top: 0; margin-top: 5px;">TOTAL: <span id="totalSoloDivisa">0.00</span> Divisa</div>
                 <button class="btn-borrar" onclick="limpiarColumnas()">BORRAR MONTOS</button>
             </div>
-            <p onclick="location.reload()" style="text-align:center; color:#aaa; cursor:pointer; margin-top:20px; font-size:0.8rem; font-weight:bold;">CERRAR SESIÓN</p>
+            <p onclick="location.reload()" style="text-align:center; color:#aaa; cursor:pointer; margin-top:20px; font-size:0.8rem; font-weight:bold;">CERRAR SESIÃ“N</p>
         </div>
     </div>
 
@@ -63,7 +63,7 @@
         <div id="reader-inv" style="display: none;"></div>
         <label for="uploadExcel" class="btn-subir-archivo">?? REEMPLAZAR EXCEL COMPLETAMENTE</label>
         <input type="file" id="uploadExcel" accept=".xlsx, .xls">
-        <div style="overflow-x: auto;"><table class="tabla-inv"><thead><tr><th>Código</th><th>Producto</th><th>Marca</th><th>Unidad</th><th>Precio</th><th>??</th></tr></thead><tbody id="cuerpo-tabla-inv"></tbody></table></div>
+        <div style="overflow-x: auto;"><table class="tabla-inv"><thead><tr><th>CÃ³digo</th><th>Producto</th><th>Marca</th><th>Unidad</th><th>Precio</th><th>??</th></tr></thead><tbody id="cuerpo-tabla-inv"></tbody></table></div>
     </div>
 
     <div id="vista-editar-producto" class="hidden" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); display:flex; justify-content:center; align-items:center; z-index:1000;">
@@ -75,7 +75,7 @@
                 </div>
                 <button class="btn-cerrar" onclick="cerrarEdicion()">?</button>
             </div>
-            <div class="input-group"><label>Código</label><input type="text" id="edit-cod" class="input-edit" readonly></div>
+            <div class="input-group"><label>CÃ³digo</label><input type="text" id="edit-cod" class="input-edit" readonly></div>
             <div class="input-group"><label>Producto</label><input type="text" id="edit-prod" class="input-edit"></div>
             <div class="input-group"><label>Marca</label><input type="text" id="edit-marca" class="input-edit"></div>
             <div class="input-group"><label>Unidad</label><input type="text" id="edit-unid" class="input-edit"></div>
@@ -87,3 +87,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
