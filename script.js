@@ -38,6 +38,7 @@ function guardarCambios() {
 let inventarioGlobal = {}; let html5QrCode; let html5QrCodeInv; let escanerBloqueado = false; let timersAtajos = {};
 
 window.onload = function() {
+    document.getElementById('claveEntrada').value = "";
     const t = localStorage.getItem('miTasaBs'); if (t) document.getElementById('tasaCambio').value = t.replace('.', ',');
     const inv = localStorage.getItem('miInventario'); if (inv) { inventarioGlobal = JSON.parse(inv); actualizarTablaVista(); }
     calcularTodo();
